@@ -174,7 +174,7 @@ def update_graph(xaxis_column_name, yaxis_column_name,
             text = dff[dff['Indicator'] == yaxis_column_name]['Country'],
             mode = 'markers',
             marker = {
-                'size': 16,
+                'size': 12,
                 'opacity': 0.5,
                 'line': {'width': 0.5, 'color': 'white'}
             }
@@ -188,7 +188,7 @@ def update_graph(xaxis_column_name, yaxis_column_name,
                 'title': yaxis_column_name,
                 'type': 'linear' if xaxis_type == 'Linear' else 'log'
             },
-            margin = {'l': 50, 'b': 50, 't': 50, 'r': 50},
+            margin = {'l': 10, 'b': 10, 't': 10, 'r': 10},
             hovermode = 'closest'
         )
     }
