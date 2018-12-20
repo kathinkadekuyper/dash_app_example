@@ -26,7 +26,7 @@ app = dash.Dash(__name__)
 server = app.server
 app.css.append_css({"external_url": "https://codepen.io/chriddyp/pen/bWLwgP.css"})
 
-data = pd.read_csv('nama_10_gdp_1_Data.csv', error_bad_lines = False, engine = 'python', na_values = [':', 'NaN'])
+data = pd.read_csv('nama_10_gdp_1_Data.csv', na_values = [':', 'NaN'])
 
 data.groupby('GEO').size()
 data=data[~data.GEO.str.contains("Euro")]
