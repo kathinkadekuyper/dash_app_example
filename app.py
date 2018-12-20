@@ -33,7 +33,7 @@ data['GEO']=data['GEO'].replace(['Germany (until 1990 former territory of the FR
 data['GEO']=data['GEO'].replace(['Kosovo (under United Nations Security Council Resolution 1244/99)'], 'Kosovo')
 data['GEO']=data['GEO'].replace(['Former Yugoslav Republic of Macedonia, the'], 'Macedonia')
 
-data=data.drop(columns=['Flag and Footnotes'], axis=1)
+data=data.drop(columns=['Flag and Footnotes'])
 data=data.reset_index(drop=True)
 
 data=data.rename(index=str, columns={"TIME": "Year", "GEO": "Country",'UNIT':'Unit','NA_ITEM':'Na_item','Value':'Value'})
