@@ -24,7 +24,6 @@ import pandas as pd
 
 app = dash.Dash(__name__)
 server = app.server
-app.css.append_css({"external_url": "https://codepen.io/chriddyp/pen/bWLwgP.css"})
 
 data = pd.read_csv('nama_10_gdp_1_Data.csv', na_values = [':', 'NaN'])
 
