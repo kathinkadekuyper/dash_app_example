@@ -32,7 +32,7 @@ data.groupby('GEO').size()
 data=data[~data.GEO.str.contains("Euro")]
 data['GEO']=data['GEO'].replace(['Germany (until 1990 former territory of the FRG)'], 'Germany')
 data['GEO']=data['GEO'].replace(['Kosovo (under United Nations Security Council Resolution 1244/99)'], 'Kosovo')
-data['GEO']=data['GEO'].replace(['Former Yugoslav Republic of Macedonia, the'], 'Maceodonia')
+data['GEO']=data['GEO'].replace(['Former Yugoslav Republic of Macedonia, the'], 'Macedonia')
 
 data=data.drop(columns=['Flag and Footnotes'])
 data=data.reset_index(drop=True)
