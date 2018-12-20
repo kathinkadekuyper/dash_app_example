@@ -47,7 +47,7 @@ available_countries = data['Country'].unique()
 app.layout = html.Div([
     html.Div([
         html.H1(
-            children = 'Cloud Computing Final Assignment',
+            children = 'Cloud Computing Final Assignment Kathinka de Kuyper',
                 style = {'font-family': 'Arial, Helvetica, sans-serif', 'text-align': 'center', 'color':'rgb(38, 69, 124)'}
             ),
              
