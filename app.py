@@ -182,10 +182,12 @@ def update_graph(xaxis_column_name, yaxis_column_name,
         'layout': go.Layout(
             xaxis = {
                 'title': xaxis_column_name,
+                'titlefont': {'size': 10},
                 'type': 'linear' if xaxis_type == 'Linear' else 'log'
             },
             yaxis = {
                 'title': yaxis_column_name,
+                'titlefont': {'size': 10},
                 'type': 'linear' if xaxis_type == 'Linear' else 'log'
             },
             margin = {'l': 50, 'b': 50, 't': 50, 'r': 50},
