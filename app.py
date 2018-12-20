@@ -41,11 +41,6 @@ data=data.rename(index=str, columns={"TIME": "Year", "GEO": "Country",'UNIT':'Un
 
 data['Indicator'] = data['Na_item'] + ' (' + data['Unit'] + ')'
 
-data.head()
-
-
-# In[ ]:
-
 
 available_indicators = data['Indicator'].unique()
 available_countries = data['Country'].unique()
